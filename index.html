@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcard Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Flashcard Quiz</h1>
+
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+
+    <div class="card" id="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <p id="question"></p>
+        </div>
+        <div class="card-back">
+          <p id="answer"></p>
+        </div>
+      </div>
+    </div>
+
+    <button id="showAnswerBtn">Show Answer</button>
+
+    <div class="navigation">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <hr>
+
+
+    <button id="deleteBtn">Delete Flashcard</button>
+  </div>
+  <!-- ➕ Floating Button -->
+  <button id="addCardBtn" class="fab">+</button>
+
+  <!-- Modal -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <h3>Add Flashcard</h3>
+      <input id="questionInput" placeholder="Enter question">
+      <input id="answerInput" placeholder="Enter answer">
+
+      <div class="modal-actions">
+        <button id="saveCardBtn">Save</button>
+        <button id="closeModalBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
